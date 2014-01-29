@@ -16,7 +16,7 @@ src:url('../fonts/oswald-light-webfont.eot') format('embedded-opentype'),url('..
 body{
 height:100%;
 margin:0;
-padding:0;
+padding:5px;
 font-family:'Oswald','Open Sans','Arial'; 
 color: #FFF;
 background: #10719E;
