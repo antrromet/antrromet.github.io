@@ -57,3 +57,18 @@ color:#000;
 color: #FFF;
 text-decoration:none;
 }
+.ant-circle{
+width:120px;
+height:120px;
+border-radius:50%;
+background:white;
+border:1px solid #fff;
+overflow:hidden;
+display:inline-block;
+vertical-align:middle;
+}
+.ant-rheader{
+display:inline-block;
+padding: 0 5px;
+}
+
