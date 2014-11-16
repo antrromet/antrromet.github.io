@@ -129,7 +129,65 @@ h6 {
 .banner-social-buttons {
     padding-top: 20px;
 }
+.content-section-b{
+    background: url(../imgbg-grey.jpg) repeat;
+    font-weight: normal;
+}
+.content-section-b .blog-ext-link{
+    padding-top: 15px;
+}
+.content-section-b .blog-ext-link a{
+    float: right;
+    font-size: 15px;
+}
 
+#rss-feeds ul{
+    padding: 0;
+}
+
+#rss-feeds li{
+    display: inline;
+    float: left;
+    width: 250px;
+    padding: 10px;
+    webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+    margin: 12px;
+    height: 220px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#rss-feeds li:hover{
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#rss-feeds .blog-title{
+    font-size: 20px;
+    margin: 0;
+    font-weight: normal;
+}
+#rss-feeds .blog-content{
+    padding-top: 10px;
+    font-weight: normal;
+}
+
+#rss-feeds .link-full{
+    float: right;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
 @media(max-width:1199px) {
     ul.banner-social-buttons {
         float: left;
@@ -152,6 +210,11 @@ h6 {
 
     ul.banner-social-buttons > li:last-child {
         margin-bottom: 0;
+    }
+
+    #rss-feeds li{
+        width: 80%;
+        height: 180px;
     }
 }
 

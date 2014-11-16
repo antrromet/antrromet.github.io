@@ -55,7 +55,7 @@
                         <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="http://antrromet.blogspot.in/">Blog</a>
+                        <a href="#l-blog-posts">Blog</a>
                     </li>
                     <li>
                         <a href="#contact">Contact</a>
@@ -98,6 +98,29 @@
                     <div class="clearfix"></div>
                     <h2 class="section-heading">About me</h2>
                     <p class="lead">Hi there! This is Antriksh Saxena a.k.a. Antrromet. I am an Android enthusiast. I love playing guitar and capturing nature in my reel.</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+    <div class="content-section-b" id="l-blog-posts">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Latest Blog Posts</h2>
+                    <div id="rss-feeds">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-lg-12 blog-ext-link">
+                	<a href="http://antrromet.blogspot.in/">Visit my blog &nbsp;<span class="fa fa-angle-double-right"></span></a>
+                	<div class="clearfix"></div>
                 </div>
             </div>
 
@@ -181,6 +204,30 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/base.js"></script>
+    <script src="js/jquery.rss.js"></script>
+    <script type="text/javascript">
+    jQuery(function($) {
+        $("#rss-feeds").rss("http://antrromet.blogspot.com/feeds/posts/default?alt=rss", {
+          limit: 15,
+          effect: 'slideFastSynced',
+          entryTemplate: '<li><h1 class="blog-title">{title}</h1><div class="blog-content">{shortBody}</div><div><a class="link-full" href="{url}">Read More &nbsp;<span class="fa fa-angle-double-right"></span></a></div></li>'
+        });
+    });
+    $(document).ready(function(){
+		$('a[href^="#"]').on('click',function (e) {
+		    e.preventDefault();
+
+		    var target = this.hash;
+		    $target = $(target);
+
+		    $('html, body').stop().animate({
+		        'scrollTop': $target.offset().top
+		    }, 900, 'swing', function () {
+		        window.location.hash = target;
+		    });
+		});
+	});
+    </script>
 
 </body>
 
