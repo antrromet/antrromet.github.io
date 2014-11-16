@@ -189,6 +189,10 @@ h6 {
     bottom: 10px;
     right: 10px;
 }
+.banner-social-buttons li{
+    margin-bottom: 10px;
+}
+
 @media(max-width:1199px) {
     ul.banner-social-buttons {
         float: left;
