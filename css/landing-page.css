@@ -130,7 +130,7 @@ h6 {
     padding-top: 20px;
 }
 .content-section-b{
-    background: url(../imgbg-grey.jpg) repeat;
+    background: url(../img/bg-grey.jpg) repeat;
     font-weight: normal;
 }
 .content-section-b .blog-ext-link{
@@ -164,6 +164,7 @@ h6 {
     position: relative;
     transition: 0.5s ease-in-out;
     cursor: pointer;
+    background: #FFF;
 }
 
 #rss-feeds li:hover{
