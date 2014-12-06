@@ -21,24 +21,42 @@ h6 {
     font-weight: 700;
 }
 
+body{
+    background: url('../img/fleck-white.gif');
+}
 .lead {
     font-size: 18px;
     font-weight: 400;
+}
+.site-logo{
+    display: inline-block;
+    float: left;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.site-logo img{
+    width: 35px;
+    margin-top: 10px;
+}
+
+.site-logo-m{
+    display: none;
 }
 
 .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
-    color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
-    background-size: cover;
+    color: #4c3d6d;
+    /*background: url(../img/intro-bg.jpg) no-repeat center center;
+    background-size: cover;*/
 }
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .intro-message > h1 {
@@ -54,10 +72,21 @@ h6 {
 }
 
 .intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    /*text-shadow: 2px 2px 3px rgba(0,0,0,0.6);*/
 }
 
 @media(max-width:767px) {
+    .site-logo-m{
+        display: inline-block;
+        float: left;
+        height: 50px;
+        margin-left: 10px;
+    }
+
+    .site-logo-m img{
+        width: 35px;
+        margin-top: 10px;
+    }
     .intro-message {
         padding-bottom: 15%;
     }
@@ -87,6 +116,9 @@ h6 {
     font-weight: 400;
     letter-spacing: 2px;
 }
+div[class^="content-section-"]{
+    padding: 50px 0;
+}
 
 .content-section-a {
     padding: 50px 0;
@@ -99,8 +131,14 @@ h6 {
     border-bottom: 1px solid #e7e7e7;
 }
 
+.content-section-c{
+    background-color: #f8f8f8;
+}
+
 .section-heading {
     margin-bottom: 30px;
+    color: #4c3d6d;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
 }
 
 .section-heading-spacer {
@@ -130,24 +168,23 @@ h6 {
     padding-top: 20px;
 }
 .content-section-b{
-    background: url(../img/bg-grey.png) repeat;
+    background: url('../img/fleck-white.gif') repeat;
     font-weight: normal;
 }
-.content-section-b .blog-ext-link{
+.blog-ext-link{
     padding-top: 15px;
 }
-.content-section-b .blog-ext-link a{
+.blog-ext-link a{
     float: right;
     font-size: 15px;
 }
 
-#rss-feeds ul{
+.container .custom-list ul{
     padding: 0;
 }
 
-#rss-feeds li{
-    display: inline;
-    float: left;
+.container .custom-list li{
+    display: inline-block;
     width: 250px;
     padding: 10px;
     webkit-border-radius: 3px;
@@ -165,32 +202,59 @@ h6 {
     transition: 0.4s ease-in-out;
     cursor: pointer;
     background: #FFF;
+    vertical-align: top;
 }
 
-#rss-feeds li:hover{
+.container .custom-list li:hover{
     -webkit-transform: all;
     -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
     -moz-box-shadow: 0 1px 18px 0 rgba(0,0,0,.2);
     box-shadow: 0 1px 18px 0 rgba(0,0,0,.2);
-    height: 220px;
+}
+.container .custom-list li.app-content{
+    width: 200px;
+    height: auto;
 }
 
-
-#rss-feeds .blog-title{
+.container .custom-list .blog-title{
     font-size: 20px;
     margin: 0;
     font-weight: normal;
+    color: #4c3d6d;
 }
-#rss-feeds .blog-content{
+
+.container .custom-list .app-title{
+    font-size: 15px;
+    margin: 0;
+    font-weight: normal;
+    color: #4c3d6d;
+    height: 30px;
+}
+
+.container .custom-list .app-content{
+    padding-top: 10px;
+    font-weight: normal;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container .custom-list .app-img{
+    width: 150px;
+}
+.container .custom-list .blog-content{
     padding-top: 10px;
     font-weight: normal;
 }
 
-#rss-feeds .link-full{
+#rss-feeds.custom-list .link-full{
     float: right;
     position: absolute;
     bottom: 10px;
     right: 10px;
+}
+.container .custom-list .app-link{
+    margin-top: 10px;
+    text-align: right;
 }
 .banner-social-buttons li{
     margin-bottom: 10px;
@@ -221,7 +285,7 @@ h6 {
     }
 
     #rss-feeds li{
-        width: 80%;
+        width: auto;
         height: 180px;
     }
 }
@@ -233,4 +297,46 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+
+.navbar-default .navbar-nav>li>a{
+  color: #4c3d6d;
+}
+
+ul.no-style{
+    list-style-type: none;
+}
+.inline-block{
+    display: inline-block;
+}
+.width100{
+    width: 100px;
+}
+.va-top{
+    vertical-align: top;
+}
+.edx-exp-content{
+    margin: 10px 0 10px 15px;
+    max-width: 80%;
+}
+a.custom-link{
+    color: #4c3d6d;
+    text-decoration: none;
+    text-shadow:1px 0px #C0C0C0;
+}
+a.custom-link:hover{
+    text-decoration: none;
+}
+.exp-loc{
+    font-size: 18px;
+}
+.exp-title{
+    color: #919191;
+    font-size: 13px;
+    font-style: italic;
+}
+@media(max-width:500px) {
+    .section-heading{
+        text-align: center;
+    }
 }
