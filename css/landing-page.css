@@ -72,7 +72,8 @@ body{
 }
 
 .intro-message > h3 {
-    /*text-shadow: 2px 2px 3px rgba(0,0,0,0.6);*/
+    color: #989898;
+    font-style: italic;
 }
 
 @media(max-width:767px) {
@@ -288,11 +289,13 @@ div[class^="content-section-"]{
         width: auto;
         height: 180px;
     }
+    .container .custom-list ul{
+        text-align: center;
+    }
 }
 
 footer {
     padding: 50px 0;
-    background-color: #f8f8f8;
 }
 
 p.copyright {
@@ -339,4 +342,15 @@ a.custom-link:hover{
     .section-heading{
         text-align: center;
     }
+}
+
+.custom-link{
+    transition: transform .2s ease;
+}
+.custom-link:hover,.custom-link:active{
+    transform: translateY(-3px);
+}
+
+.contact-icons{
+    font-size: 20px;
 }
