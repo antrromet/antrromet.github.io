@@ -318,8 +318,11 @@ ul.no-style{
 .va-top{
     vertical-align: top;
 }
+.edx-logo{
+    margin-right: 15px;
+}
 .edx-exp-content{
-    margin: 10px 0 10px 15px;
+    margin: 10px 0 10px 0;
     max-width: 80%;
 }
 a.custom-link{
