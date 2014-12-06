@@ -77,6 +77,10 @@ body{
 }
 
 @media(max-width:767px) {
+    .site-logo{
+        display: none;
+    }
+    
     .site-logo-m{
         display: inline-block;
         float: left;
