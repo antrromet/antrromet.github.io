@@ -31,6 +31,22 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script type="text/javascript">
+    function loadImage (el, fn) {
+            var img = new Image()
+              , src = el.getAttribute('data-src');
+            img.onload = function() {
+              if (!! el.parent)
+                el.parent.replaceChild(img, el)
+              else
+                el.src = src;
+
+              fn? fn() : null;
+            }
+            img.src = src;
+    }
+    </script>
+
 </head>
 
 <body>
@@ -110,7 +126,7 @@
                              <li class="app-content">
                                 <h1 class="app-title">EMC Partner News</h1>
                                 <div class="app-content">
-                                    <img src="img/app-default.gif" class="app-img"/>
+                                    <img src="img/placeholder.png" data-src="img/placeholder.png" class="app-img" onload="loadImage(this)"/>
                                 </div>
                                 <div class="app-link">
                                     <a class="link-full" href="">&nbsp;</a>
@@ -119,7 +135,7 @@
                              <li class="app-content">
                                 <h1 class="app-title">Vuzix</h1>
                                 <div class="app-content">
-                                    <img src="img/app-default.gif" class="app-img"/>
+                                    <img data-src="img/placeholder.png" src="img/placeholder.png" class="app-img" onload="loadImage(this)"/>
                                 </div>
                                 <div class="app-link">
                                     <a class="link-full" href="">&nbsp;</a>
@@ -128,7 +144,7 @@
                             <li class="app-content">
                                 <h1 class="app-title">Castgraphy</h1>
                                 <div class="app-content">
-                                    <img src="img/castgraphy.png" class="app-img"/>
+                                    <img src="img/placeholder.png" data-src="img/castgraphy.png" class="app-img" onload="loadImage(this)"/>
                                 </div>
                                 <div class="app-link">
                                     <a class="link-full custom-link" href="https://play.google.com/store/apps/details?id=com.castgraphy.cs&hl=en">Play Store Link &nbsp;<span class="fa fa-angle-double-right"></span></a>
@@ -137,7 +153,7 @@
                             <li class="app-content">
                                 <h1 class="app-title">Khachack: Photos + Posters</h1>
                                 <div class="app-content">
-                                    <img src="img/khachak.png" class="app-img"/>
+                                    <img src="img/placeholder.png" data-src="img/khachak.png" class="app-img" onload="loadImage(this)"/>
                                 </div>
                                 <div class="app-link">
                                     <a class="link-full custom-link" href="https://play.google.com/store/apps/details?id=com.ndtv.khachack&hl=en">Play Store Link &nbsp;<span class="fa fa-angle-double-right"></span></a>
@@ -146,7 +162,7 @@
                             <li class="app-content">
                                 <h1 class="app-title">Soldier's Field Card</h1>
                                 <div class="app-content">
-                                    <img src="img/sfc.png" class="app-img"/>
+                                    <img src="img/placeholder.png" data-src="img/sfc.png" class="app-img" onload="loadImage(this)"/>
                                 </div>
                                 <div class="app-link">
                                     <a class="link-full custom-link" href="https://play.google.com/store/apps/details?id=com.usareu.sfc&hl=en">Play Store Link &nbsp;<span class="fa fa-angle-double-right"></span></a>
@@ -175,7 +191,7 @@
                         <ul class="no-style">
                         <li>
                             <div class="inline-block va-top">
-                                <img src="img/usc.png" class="width100" />
+                                <img src="img/placeholder.png" data-src="img/usc.png" class="width100" onload="loadImage(this)" />
                             </div>
                             <div class="inline-block edx-exp-content">
                                 <p class="exp-loc"><a class="custom-link" href="http://www.usc.edu">University of Southern California</a></p>
@@ -185,7 +201,7 @@
                         </li>
                         <li>
                             <div class="inline-block va-top">
-                                <img src="img/sb.png" class="width100" />
+                                <img src="img/placeholder.png" data-src="img/sb.png" class="width100" onload="loadImage(this)" />
                             </div>
                             <div class="inline-block edx-exp-content">
                                 <p class="exp-loc"><a class="custom-link" href="http://www.sourcebits.com">Sourcebits</a></p>
@@ -195,7 +211,7 @@
                         </li>
                         <li>
                             <div class="inline-block va-top">
-                                <img src="img/vit.png" class="width100" />
+                                <img src="img/placeholder.png" data-src="img/vit.png" class="width100" onload="loadImage(this)" />
                             </div>
                             <div class="inline-block edx-exp-content">
                                 <p class="exp-loc"><a class="custom-link" href="http://www.vit.edu">VIT University</a></p>
@@ -328,6 +344,7 @@
     <script src="js/base.js"></script>
     <script src="js/jquery.rss.js"></script>
     <script type="text/javascript">
+
     jQuery(function($) {
         $("#rss-feeds").rss("http://antrromet.blogspot.com/feeds/posts/default?alt=rss", {
           limit: 15,
@@ -348,6 +365,7 @@
 		        window.location.hash = target;
 		    });
 		});
+
 	});
     </script>
 

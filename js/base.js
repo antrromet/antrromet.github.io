@@ -20,7 +20,6 @@ var getImages = function () {
             items.push(url);
         }
     });
-    console.log(items);
 }
 var preloading = function () {
     for (var i = 0; i < items.length; i++) {
@@ -45,7 +44,6 @@ var completeLoading = function () {
     var per = Math.round((current / items.length) * 100);
 
     $(".status-loaded").css("height", per + "%");
-    console.log(per);
 }
 getImages();
 preloading();
