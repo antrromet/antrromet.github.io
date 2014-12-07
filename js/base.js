@@ -54,3 +54,28 @@ $(window).load(function () { // makes sure the whole site is loaded
         'overflow': 'visible'
     });
 });
+
+
+jQuery(function($) {
+    $("#rss-feeds").rss("http://antrromet.blogspot.com/feeds/posts/default?alt=rss", {
+          limit: 15,
+          effect: 'slideFastSynced',
+          entryTemplate: '<li><h1 class="blog-title">{title}</h1><div class="blog-content">{shortBody}</div><div><a class="custom-link link-full" href="{url}">Read More &nbsp;<span class="fa fa-angle-double-right"></span></a></div></li>'
+        });
+});
+    
+$(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+
+            var target = this.hash;
+            $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+
+});
