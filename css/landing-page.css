@@ -385,11 +385,14 @@ a.custom-link:hover{
     }
 }
 
-.custom-link{
-    transition: transform .2s ease;
+a.custom-link{
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s
 }
-.custom-link:hover,.custom-link:active{
-    
+a.custom-link:hover,a.custom-link:active{
+    color:#626262;
 }
 
 .contact-icons{
