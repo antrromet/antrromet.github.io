@@ -394,6 +394,13 @@ a.custom-link{
 a.custom-link:hover,a.custom-link:active{
     color:#626262;
 }
+a.sn-icon{
+    padding: 0 5px;
+}
+
+a.sn-icon:hover{
+    transform: scale(1.5);
+}
 
 .contact-icons{
     font-size: 20px;
