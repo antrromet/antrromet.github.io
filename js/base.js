@@ -64,11 +64,21 @@ jQuery(function($) {
         });
 });
 
-function loadImage(el,fn){var img=new Image(),src=el.getAttribute('data-src');img.onload=function(){if(!!el.parent)
-el.parent.replaceChild(img,el)
-else
-el.src=src;fn?fn():null;}
-img.src=src;}
+function loadImage(el,fn){
+    var img=new Image(),src=el.getAttribute('data-src');
+    img.onload=function(){
+        if(!!el.parent)
+        {
+            el.parent.replaceChild(img,el);
+        }
+        else{
+            $(el).fadeOut(600, function() {
+                $(el).attr("src",src)
+            }).fadeIn(1000);
+        }
+        fn?fn():null;}
+    img.src=src;
+}
     
 $(document).ready(function(){
         $(".lazy-load-images").each(function(){
