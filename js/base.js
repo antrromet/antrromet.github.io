@@ -63,8 +63,17 @@ jQuery(function($) {
           entryTemplate: '<li><h1 class="blog-title">{title}</h1><div class="blog-content">{shortBody}</div><div><a class="custom-link link-full" href="{url}">Read More &nbsp;<span class="fa fa-angle-double-right"></span></a></div></li>'
         });
 });
+
+function loadImage(el,fn){var img=new Image(),src=el.getAttribute('data-src');img.onload=function(){if(!!el.parent)
+el.parent.replaceChild(img,el)
+else
+el.src=src;fn?fn():null;}
+img.src=src;}
     
 $(document).ready(function(){
+        $(".lazy-load-images").each(function(){
+            loadImage(this);
+        });
         $('a[href^="#"]').on('click',function (e) {
             e.preventDefault();
 

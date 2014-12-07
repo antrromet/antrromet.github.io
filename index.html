@@ -18,11 +18,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-<script>function loadImage(el,fn){var img=new Image(),src=el.getAttribute('data-src');img.onload=function(){if(!!el.parent)
-el.parent.replaceChild(img,el)
-else
-el.src=src;fn?fn():null;}
-img.src=src;}</script>
 </head>
 <body>
 <div id=preloader>
@@ -98,7 +93,7 @@ img.src=src;}</script>
 <li class=app-content>
 <h1 class=app-title>EMC Partner News</h1>
 <div class=app-content>
-<img src="img/placeholder.png" data-src="img/placeholder.png" width=150 height=136 class=app-img onload="loadImage(this)"/>
+<img src="img/placeholder.png" data-src="img/placeholder.png" width=150 height=136 class="lazy-load-images app-img"/>
 </div>
 <div class=app-link>
 <a class=link-full href="">&nbsp;</a>
@@ -107,7 +102,7 @@ img.src=src;}</script>
 <li class=app-content>
 <h1 class=app-title>Vuzix</h1>
 <div class=app-content>
-<img data-src="img/placeholder.png" src="img/placeholder.png" width=150 height=136 class=app-img onload="loadImage(this)"/>
+<img data-src="img/placeholder.png" src="img/placeholder.png" width=150 height=136 class="app-img lazy-load-images"/>
 </div>
 <div class=app-link>
 <a class=link-full href="">&nbsp;</a>
@@ -116,7 +111,7 @@ img.src=src;}</script>
 <li class=app-content>
 <h1 class=app-title>Castgraphy</h1>
 <div class=app-content>
-<img src="img/placeholder.png" data-src="img/castgraphy.png" width=150 height=150 class="app-img" onload="loadImage(this)"/>
+<img src="img/placeholder.png" data-src="img/castgraphy.png" width=150 height=150 class="app-img lazy-load-images"/>
 </div>
 <div class=app-link>
 <a class="link-full custom-link" href="https://play.google.com/store/apps/details?id=com.castgraphy.cs&hl=en">Play Store Link &nbsp;<span class="fa fa-angle-double-right"></span></a>
@@ -125,7 +120,7 @@ img.src=src;}</script>
 <li class=app-content>
 <h1 class=app-title>Khachack: Photos + Posters</h1>
 <div class=app-content>
-<img src="img/placeholder.png" data-src="img/khachak.png" width=150 height=150 class=app-img onload="loadImage(this)"/>
+<img src="img/placeholder.png" data-src="img/khachak.png" width=150 height=150 class="app-img lazy-load-images"/>
 </div>
 <div class=app-link>
 <a class="link-full custom-link" href="https://play.google.com/store/apps/details?id=com.ndtv.khachack&hl=en">Play Store Link &nbsp;<span class="fa fa-angle-double-right"></span></a>
@@ -134,7 +129,7 @@ img.src=src;}</script>
 <li class=app-content>
 <h1 class=app-title>Soldier's Field Card</h1>
 <div class=app-content>
-<img src="img/placeholder.png" data-src="img/sfc.png" width=150 height=150 class="app-img" onload="loadImage(this)"/>
+<img src="img/placeholder.png" data-src="img/sfc.png" width=150 height=150 class="app-img lazy-load-images"/>
 </div>
 <div class=app-link>
 <a class="link-full custom-link" href="https://play.google.com/store/apps/details?id=com.usareu.sfc&hl=en">Play Store Link &nbsp;<span class="fa fa-angle-double-right"></span></a>
@@ -156,7 +151,7 @@ img.src=src;}</script>
 <ul class=no-style>
 <li>
 <div class="inline-block va-top edx-logo">
-<img src="img/placeholder.png" data-src="img/usc.png" class=width100 width=100 height=100 onload="loadImage(this)"/>
+<img src="img/placeholder.png" data-src="img/usc.png" class="width100 lazy-load-images" width=100 height=100/>
 </div>
 <div class="inline-block edx-exp-content">
 <p class=exp-loc><a class=custom-link href="http://www.usc.edu">University of Southern California</a></p>
@@ -166,7 +161,7 @@ img.src=src;}</script>
 </li>
 <li>
 <div class="inline-block va-top edx-logo">
-<img src="img/placeholder.png" data-src="img/sb.png" class=width100 width=100 height=100 onload="loadImage(this)"/>
+<img src="img/placeholder.png" data-src="img/sb.png" class="width100 lazy-load-images" width=100 height=100/>
 </div>
 <div class="inline-block edx-exp-content">
 <p class=exp-loc><a class=custom-link href="http://www.sourcebits.com">Sourcebits</a></p>
@@ -176,7 +171,7 @@ img.src=src;}</script>
 </li>
 <li>
 <div class="inline-block va-top edx-logo">
-<img src="img/placeholder.png" data-src="img/vit.png" class=width100 width=100 height=96 onload="loadImage(this)"/>
+<img src="img/placeholder.png" data-src="img/vit.png" class="width100 lazy-load-images" width=100 height=96/>
 </div>
 <div class="inline-block edx-exp-content">
 <p class=exp-loc><a class=custom-link href="http://www.vit.edu">VIT University</a></p>
