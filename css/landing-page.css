@@ -389,7 +389,7 @@ a.custom-link:hover{
     transition: transform .2s ease;
 }
 .custom-link:hover,.custom-link:active{
-    transform: translateY(-3px);
+    
 }
 
 .contact-icons{
