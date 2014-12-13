@@ -232,6 +232,7 @@ div[class^="content-section-"]{
 .container .custom-list .blog-content{
     padding-top: 10px;
     font-weight: normal;
+    text-align: justify;
 }
 
 #rss-feeds.custom-list .link-full{
