@@ -367,6 +367,8 @@ a.sn-icon:hover{
     border-bottom: 5px solid #03A9F4;
 }
 .copyright.align-right{
-    margin-right:2px;
     text-align:right;
+}
+.copyright.margin{
+    margin-right:2px;
 }
