@@ -369,6 +369,6 @@ a.sn-icon:hover{
 .copyright.align-right{
     text-align:right;
 }
-.copyright.margin{
+.copyright .margin{
     margin-right:2px;
 }
