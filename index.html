@@ -14,6 +14,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/landing-page.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
 </head>
 
 <body>
@@ -44,13 +46,13 @@
         </nav>
 
         <main id="scroller">
-            <section class="module parallax parallax-1">
+            <section class="section module parallax parallax-1">
                 <div class="container">
                     <!--<h1>Antrromet</h1>-->
                 </div>
             </section>
 
-            <section class="module content" id="exp">
+            <section class="section module content" id="exp">
                 <div class="container">
                     <h2>Education & Experience</h2>
 
@@ -62,24 +64,22 @@
                     illum atque quasi explicabo, culpa, molestias!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptas, aperiam quae provident, recusandae rem quis. Ut
                     quaerat, quasi iste voluptate et dolorem atque sed neque voluptates, molestias dolor enim!</p>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit tempore, quibusdam impedit deserunt. Natus quisquam, facilis numquam, molestias nesciunt modi, at debitis
-                    maxime sunt et quo quas labore perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde delectus laborum doloremque recusandae, debitis maxime a! Nihil
-                    distinctio ex, cumque tempore ea voluptas omnis odit, quaerat natus nam excepturi corporis!</p>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius harum atque unde nihil aut quam provident sunt, iste error vitae suscipit dolores cupiditate totam, eum
-                    quae alias! Dicta, nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate beatae impedit officia quis odit rerum sequi, explicabo commodi illum suscipit, tempore
-                    eum doloremque quae obcaecati tempora quidem neque sapiente modi?</p>
 
                 </div>
             </section>
 
-            <section class="module parallax parallax-2">
-                <div class="container">
-                    <!--<h1>About</h1>-->
+            <section class="section module parallax parallax-2">
+                <div class="container padding10">
+                    <!--<div class="card square200 inBlk">&nbsp;</div>
+                    <div class="card square200 inBlk">&nbsp;</div>
+                    <div class="card square200 inBlk">&nbsp;</div>
+                    <div class="card square200 inBlk">&nbsp;</div>                    
+                    <div class="card square200 inBlk">&nbsp;</div>-->
                 </div>
             </section>
 
-            <section class="module content">
+            <section class="section module content">
                 <div class="container">
                     <h2>Skills</h2>
 
@@ -91,23 +91,19 @@
                     illum atque quasi explicabo, culpa, molestias!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptas, aperiam quae provident, recusandae rem quis. Ut
                     quaerat, quasi iste voluptate et dolorem atque sed neque voluptates, molestias dolor enim!</p>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit tempore, quibusdam impedit deserunt. Natus quisquam, facilis numquam, molestias nesciunt modi, at debitis
-                    maxime sunt et quo quas labore perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde delectus laborum doloremque recusandae, debitis maxime a! Nihil
-                    distinctio ex, cumque tempore ea voluptas omnis odit, quaerat natus nam excepturi corporis!</p>
+                    
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius harum atque unde nihil aut quam provident sunt, iste error vitae suscipit dolores cupiditate totam, eum
-                    quae alias! Dicta, nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate beatae impedit officia quis odit rerum sequi, explicabo commodi illum suscipit, tempore
-                    eum doloremque quae obcaecati tempora quidem neque sapiente modi?</p>
+                 
                 </div>
             </section>
 
-            <section class="module parallax parallax-3">
+            <section class="section module parallax parallax-3">
                 <div class="container">
                     <!--<h1>Calm</h1>-->
                 </div>
             </section>
 
-            <section class="module content">
+            <section class="section module content">
                 <div class="container">
                     <h2>Testimonials</h2>
 
@@ -125,7 +121,7 @@
                 </div>
             </section>
 
-            <section class="module parallax parallax-4">
+            <section class="section module parallax parallax-4">
                 <div class="container">
                     <!--<h1>Calm</h1>-->
                 </div>
@@ -164,5 +160,10 @@
             </div>
         </footer>
     </div>
+<script type="text/javascript">
+$(document).on('ready',function(){
+    $('#scroller').fullpage();
+});  
+</script>
 </body>
 </html>
